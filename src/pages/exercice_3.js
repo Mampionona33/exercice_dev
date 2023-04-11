@@ -7,7 +7,7 @@ export default function Exercice3() {
       <Navbar />
       <hr />
       <h1>Les tableaux</h1>
-      <table border={1} width={"40%"}>
+      <table align="center" border={1} width={"40%"}>
         <thead>
           <tr>
             <td>
@@ -50,9 +50,10 @@ export default function Exercice3() {
             <td>cellule simple</td>
           </tr>
           <tr>
-            <td colSpan={3}>cellule simple</td>
+            <td colSpan={3}>cellule avec trois colonnes</td>
           </tr>
         </tbody>
+        <caption>My first table</caption>
       </table>
     </React.Fragment>
   );
