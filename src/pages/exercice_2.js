@@ -10,9 +10,10 @@ export default function Exercice2() {
       <h1>Formulaire</h1>
       <p>Dans cette exercice il faut regarder les composantes suivante :</p>
       <ul>
-        <li>L'élément HTML &lt;form&gt;</li>
-        <li>L'élément HTML &lt;label&gt;</li>
-        <li>L'élément HTML &lt;div&gt;</li>
+        <li>L&apos;élément HTML &lt;form&gt;</li>
+        <li>L&apos;élément HTML &lt;form&gt;</li>
+        <li>{"L'élément HTML &lt;label&gt;"}</li>
+        <li>{"L'élément HTML &lt;div&gt;"}</li>
         <li>Les éléments HTML de type input</li>
       </ul>
       <hr />
