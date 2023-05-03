@@ -1,6 +1,10 @@
 import { Navbar } from "../../components/navbar";
 
 export default function Exercice2() {
+  const handleSexChange = (ev) => {
+    ev.preventDefault();
+  };
+
   return (
     <div>
       <Navbar />
@@ -12,8 +16,8 @@ export default function Exercice2() {
       <ul>
         <li>L&apos;élément HTML &lt;form&gt;</li>
         <li>L&apos;élément HTML &lt;form&gt;</li>
-        <li>{"L'élément HTML &lt;label&gt;"}</li>
-        <li>{"L'élément HTML &lt;div&gt;"}</li>
+        <li>L'élément HTML &lt;label&gt;</li>
+        <li>L'élément HTML &lt;div&gt;</li>
         <li>Les éléments HTML de type input</li>
       </ul>
       <hr />
@@ -45,63 +49,68 @@ export default function Exercice2() {
       <div>
         <form action="">
           <div>
-            <label for="Nom">Nom</label>
+            <label htmlFor="Nom">Nom</label>
             <input type="text" name="Nom" id="Nom" required />
           </div>
           <br />
           <div>
-            <label for="prenom">Prénom</label>
+            <label htmlFor="prenom">Prénom</label>
             <input type="text" name="Nom" id="prenom" />
           </div>
           <br />
           <div>
-            <label for="adress">Adress</label>
+            <label htmlFor="adress">Adress</label>
             <input type="text" name="adress" id="adress" />
           </div>
           <div>
             <p>Sex :</p>
-            <input type="radio" name="sex" id="sex_f" value="F" checked />
-            <label for="sex">F</label>
+            <input
+              type="radio"
+              name="sex"
+              id="sex_f"
+              value="F"
+              checked
+              onChange={handleSexChange}
+            />
+            <label htmlFor="sex">F</label>
             <input type="radio" name="sex" id="sex_m" value="M" />
-            <label for="sex">M</label>
+            <label htmlFor="sex">M</label>
           </div>
           <br />
           <div>
-            <label for="age">Age</label>
+            <label htmlFor="age">Age</label>
             <input type="number" name="Nom" id="age" min="0" required />
           </div>
           <br />
           <br />
           <div>
-            <label for="email">email</label>
+            <label htmlFor="email">email</label>
             <input type="email" name="email" id="email" />
           </div>
           <br />
           <div>
-            <label for="mdp">Mots de passe</label>
+            <label htmlFor="mdp">Mots de passe</label>
             <input type="password" name="mdp" id="mdp" />
           </div>
           <br />
           <div>
-            <label for="confirm_mdp">Confirmer mots de passe</label>
+            <label htmlFor="confirm_mdp">Confirmer mots de passe</label>
             <input type="password" name="confirm_mdp" id="confirm_mdp" />
           </div>
           <br />
           <div>
-            <label for="fichier">Imorter une image</label>
+            <label htmlFor="fichier">Imorter une image</label>
             <input type="file" name="fichier" id="fichier" />
           </div>
           <br />
           <div>
-            <label for="comment">Commentaire</label>
-            <textarea name="comment" id="comment" cols="30" rows="10">
-              {" "}
-            </textarea>
+            <label htmlFor="comment">Commentaire</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" />
           </div>
           <br />
           <div>
             <input type="checkbox" name="verification" id="verification" />
-            <label for="verification">J'ai fais la verification</label>
+            <label htmlFor="verification">J'ai fais la verification</label>
           </div>
           <br />
           <div>
