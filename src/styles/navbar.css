@@ -18,23 +18,7 @@
   text-transform: uppercase;
   padding: 0.2rem 1rem;
   border: 2px solid transparent;
-  position: relative;
   cursor: pointer;
-  position: relative;
-}
-.navbar__container > li > ul {
-  display: none;
-  position: absolute;
-  top: 2rem;
-  left: 0;
-  padding-top: 1rem;
-  width: fit-content;
-}
-.navbar__container > li > ul:hover {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  background-color: #1a5276;
 }
 .navbar__container > li:hover {
   border-color: gold;
@@ -46,15 +30,16 @@
   justify-content: flex-start;
   text-align: left;
   background-color: #1a5276;
+  width: fit-content;
 }
-.navbar__container > li:hover > ul > li {
-  display: block;
-}
-.navbar__container > li:hover > ul > li:hover {
-  color: gold;
-}
-.navbar__container > li:hover > ul > li > a {
-  display: block;
+.navbar__container > li > ul {
+  display: none;
+  position: absolute;
+  background-color: #1a5276;
+  top: 100%;
+  text-align: left;
+  padding-top: 0.5rem;
+  width: fit-content;
 }
 
 /*# sourceMappingURL=navbar.css.map */
