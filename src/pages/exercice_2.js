@@ -12,7 +12,7 @@ export default function Exercice2() {
       <h1>Exercice 2</h1>
       <hr />
       <h1>Formulaire</h1>
-      <p>Dans cette exercice il faut regarder les composantes suivante :</p>
+      <p>Dans cet exercice, il faut regarder les composantes suivantes :</p>
       <ul>
         <li>L&apos;élément HTML &lt;form&gt;</li>
         <li>L&apos;élément HTML &lt;form&gt;</li>
@@ -110,7 +110,7 @@ export default function Exercice2() {
           <br />
           <div>
             <input type="checkbox" name="verification" id="verification" />
-            <label htmlFor="verification">J'ai fais la verification</label>
+            <label htmlFor="verification">J'ai terminé la vérification.</label>
           </div>
           <br />
           <div>
