@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div class="home">
       <Navbar />
-      <div>
-        <h1>Home page</h1>
+      <div class="home__body">
+        <h1 style={{ color: "#fff" }}>Home page</h1>
       </div>
     </div>
   );
