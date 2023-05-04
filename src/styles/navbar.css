@@ -1,0 +1,60 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  text-align: center;
+  align-items: center;
+  background-color: #1a5276;
+  padding: 0.5rem;
+}
+.navbar__container {
+  display: flex;
+  gap: 1rem;
+}
+.navbar__container > li {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.2rem 1rem;
+  border: 2px solid transparent;
+  position: relative;
+  cursor: pointer;
+  position: relative;
+}
+.navbar__container > li > ul {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  padding-top: 1rem;
+  width: fit-content;
+}
+.navbar__container > li > ul:hover {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: #1a5276;
+}
+.navbar__container > li:hover {
+  border-color: gold;
+  transition: border-color 0.2s ease-in-out;
+}
+.navbar__container > li:hover > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  background-color: #1a5276;
+}
+.navbar__container > li:hover > ul > li {
+  display: block;
+}
+.navbar__container > li:hover > ul > li:hover {
+  color: gold;
+}
+.navbar__container > li:hover > ul > li > a {
+  display: block;
+}
+
+/*# sourceMappingURL=navbar.css.map */
